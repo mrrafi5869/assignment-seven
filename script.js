@@ -28,16 +28,14 @@ const typeController = (e) => {
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
   }
-
-  if(newLetter !== question){
-    errorCount++
-  }
+ 
   // these are the valid character we are allowing to type
   const validLetters =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890!@#$%^&*()_+-={}[]'\".,?";
 
   // if it is not a valid character like Control/Alt then skip displaying anything
   if (!validLetters.includes(newLetter)) {
+    errorCount++
     return;
   }
 
