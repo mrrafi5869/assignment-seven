@@ -13,6 +13,9 @@
         border: 1px solid black;
         border-collapse: collapse;
       }
+      th,td{
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
@@ -24,8 +27,21 @@
           <th>Session storage</th>
         </tr>
         <tr>
-          <td>Session storage is destroyed once the user closes the browser</td>
           <td>Local storage stores data with no expiration date.</td>
+          <td>Session storage is destroyed once the user closes the browser</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1>1. What's the difference of Global scope and block scope</h1>
+      <table>
+        <tr>
+          <th>Global Scope</th>
+          <th>Block Scope</th>
+        </tr>
+        <tr>
+          <td>When a variable is globally scoped, it means it is available from anywhere in your program</td>
+          <td>A block scoped variable means that the variable defined within a block will not be accessible from outside the block.</td>
         </tr>
       </table>
     </section>
